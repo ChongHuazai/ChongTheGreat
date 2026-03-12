@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zydriff Bernardino | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">CHONG<span>.</span></div>
+            <div class="hamburger" id="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- HERO / HOMEPAGE -->
+        <section id="home" class="hero reveal">
+            <div class="hero-content">
+                <img src="images/462543933_1384700925837496_5830110448786385199_n.jpg" alt="Profile Photo" class="profile-photo">
+                <div>
+                    <h1>Hi, I'm <span class="gradient-text">Zydriff Bernardino</span></h1>
+                    <p class="subtitle">BS Information Technology Student at Quezon City University</p>
+                    <p class="bio">Hello! I'm a BSIT student with aspirations of becoming a Software Engineer / Senior Programmer. I focus on clean interface design and solid functionality. This portfolio highlights my background, skills, and projects.</p>
+                    <a href="#projects" class="btn-work">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="about reveal">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a third‑year BSIT student at Quezon City University with a keen interest in web development, software development, and UI/UX design. Currently, I am expanding my knowledge in web technologies and database systems. My academic training has strengthened my analytical skills and enabled me to approach system problems methodically.</p>
+            <p>Career goals: I aspire to become a Software Engineer or Senior Programmer, working on web applications that make everyday tasks easier for people.</p>
+            <p>When I'm not coding, I enjoy sketching UI concepts, experimenting with new front‑end libraries, and reading about emerging tech trends.</p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="reveal">
+            <h2 class="section-title">Projects / Work Samples</h2>
+            <div class="project-grid" id="project-container">
+                <!-- Cards injected by script.js -->
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="reveal">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-group">
+                <h3 class="skills-subtitle">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card"><i data-lucide="monitor"></i> UI/UX Design</div>
+                    <div class="skill-card"><i data-lucide="code"></i> Front-End Development</div>
+                    <div class="skill-card"><i data-lucide="pie-chart"></i> System Analysis</div>
+                    <div class="skill-card"><i data-lucide="server"></i> ASP.NET</div>
+                    <div class="skill-card"><i data-lucide="hash"></i> C#</div>
+                    <div class="skill-card"><i data-lucide="javascript"></i> JavaScript</div>
+                    <div class="skill-card"><i data-lucide="file-html"></i> HTML</div>
+                    <div class="skill-card"><i data-lucide="file-css"></i> CSS</div>
+                    <div class="skill-card"><i data-lucide="file-input"></i> PHP</div>
+                    <div class="skill-card"><i data-lucide="database"></i> MySQL</div>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h3 class="skills-subtitle">Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card"><i data-lucide="refresh-cw"></i> Adaptability</div>
+                    <div class="skill-card"><i data-lucide="users"></i> Teamwork</div>
+                    <div class="skill-card"><i data-lucide="message-square"></i> Communication</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Email: <a href="mailto:zydriff18@gmail.com">zydriff18@gmail.com</a></p>
+            <p>Phone: <a href="tel:+639693544456">+63 969 354 4456</a></p>
+            <div class="social-icons">
+                <a href="https://github.com/ChongHuazai" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+                <a href="mailto:zydriff18@gmail.com"><i data-lucide="mail"></i></a>
+                <a href="tel:+639693544456"><i data-lucide="phone"></i></a>
+            </div>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Zydriff Bernardino • QCU IT</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
